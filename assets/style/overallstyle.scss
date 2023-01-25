@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap');
+
+@import "scss/vars"; //Переменные
+@import "scss/mixins"; //Миксины 
+
+@import "scss/blocks/header"; //Хедер Ильвина 
+@import "scss/blocks/banner"; //Баннер на главной странице Ильвина
+@import "scss/blocks/intro";  //Давайте знакомиться Ильвина
+@import "scss/blocks/main-page-block";
+// @import "scss/blocks/video"; //can be deleted
+@import "scss/blocks/training-materials"; //К уроку Лиза
+@import "scss/blocks/education";
+@import "scss/blocks/footer"; //футер Дания
+@import "scss/blocks/about"; //обо мне Саша

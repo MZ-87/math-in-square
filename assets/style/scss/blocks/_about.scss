@@ -1,0 +1,254 @@
+.about__img {
+    max-height: 700px;
+    grid-column: 2/3;
+    margin-left: auto;
+    margin-right: 5em;
+    border-radius: 30px;
+}
+
+.about__title {
+    margin: 5%;
+    text-align: center;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+}
+
+.about__text {
+    grid-column: 3/4;
+}
+
+.about__list {
+    font-size: 1.5rem;
+    list-style-position: outside;
+    list-style-image: url(../img/square_about.png);
+}
+
+.about__title_teacher {
+    margin-left: 5%;
+    color: $vivid-warm-color;
+}
+
+.about__list_li {
+    margin-bottom: 1rem;
+}
+
+/*gallery*/
+
+.about__photo {
+    @include about_images_block;
+    grid-area: "photo_content";
+    margin-top: 10%;
+    margin-bottom: 5%;
+    grid-template-areas:
+        "about__photo_1 about__photo_2 about__photo_3 about__photo_4 about__photo_5 about__photo_6";
+
+    &_1 {
+        grid-area: "about__photo_1";
+        margin-left: 20px;
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+    &_2 {
+        grid-area: "about__photo_2";
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+    &_3 {
+        grid-area: "about__photo_3";
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+    &_4 {
+        grid-area: "about__photo_4";
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+
+    &_5 {
+        grid-area: "about__photo_5";
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+    &_6 {
+        grid-area: "about__photo_6";
+
+
+        &:hover {
+            transform: scale(2.0);
+        }
+    }
+
+    &_1,
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+        max-height: 280px;
+        border-radius: 15px;
+        transition: 1s;
+    }
+}
+
+.about__certificate {
+    @include about_images_block;
+    grid-area: "certificate_content";
+    margin: 5%;
+    grid-template-areas:
+        "about__certificate_1 about__certificate_2 about__certificate_3 about__certificate_4 about__certificate_5 about__certificate_6";
+
+    &_title {
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--bs-heading-color);
+    }
+
+    &_1 {
+        grid-area: "about__certificate_1";
+        transition: 1s;
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_2 {
+        grid-area: "about__certificate_2";
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_3 {
+        grid-area: "about__certificate_3";
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_4 {
+        grid-area: "about__certificate_4";
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_5 {
+        grid-area: "about__certificate_5";
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_6 {
+        grid-area: "about__certificate_6";
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    &_1,
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+        max-height: 220px;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .about__list {
+        font-size: 1rem;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .about__title_teacher {
+        font-size: 1.4rem;
+    }
+
+    .about__photo,
+    .about__certificate {
+        overflow-x: scroll;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &_1,
+        &_2,
+        &_3,
+        &_4,
+        &_5,
+        &_6 {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about__container {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about__list {
+        font-size: 1rem;
+    }
+
+    .about__img {
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .about__photo,
+    .about__certificate {
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &_1,
+        &_2,
+        &_3,
+        &_4,
+        &_5,
+        &_6 {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,208 @@
+.main {
+    &__banner {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        padding: 0 6%;
+    }
+
+    &__photo {
+        justify-self: end;
+
+        width: 80%;
+        border-radius: 30px;
+    }
+
+    &__text {
+        padding: 10% 15%;
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 2.2rem;
+
+        color: $text-color;
+
+        &_vivid {
+            color: $vivid-warm-color;
+            padding: 0;
+        }
+    }
+
+    &__slogan {
+        margin: 5% auto 12% auto;
+        font-family: $main-font;
+        font-size: 1.5rem;
+
+        color: $text-color;
+    }
+
+    &__about {
+        width: 30%;
+        padding: 1.5% 8%;
+        border-radius: 10px;
+        border: none;
+
+        font-family: $main-font;
+        font-size: 1.5rem;
+        text-align: center;
+
+        background-color: $pastel-warm-color;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover {
+            background-color: $vivid-warm-color;
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1300px) {
+    .main {
+        &__text {
+            padding: 7% 15%;
+        }
+
+        &__photo {
+            width: 95%;
+        }
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__about {
+            width: 40%;
+            padding: 1.5% 8%;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .main {
+        &__text {
+            padding: 10%;
+        }
+
+        &__photo {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 1.3rem;
+        }
+
+        &__slogan {
+            font-size: 1rem;
+        }
+
+        &__about {
+            font-size: 1rem;
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:767px) {
+    .main {
+        &__banner {
+            display: flex;
+            margin-top: 3%;
+            background-image: url(../img/photo_banner.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &__photo {
+            display: none;
+        }
+
+        &__text {
+            margin-top: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4%;
+            border-radius: 15px;
+
+            text-align: center;
+
+            background-color: #E6E6FA95;
+        }
+
+        &__title {
+            font-size: 1.2rem;
+            color: darken($text-color, $amount: 10%);
+
+            &_vivid {
+                color: darken($vivid-warm-color, $amount: 10%);
+            }
+        }
+
+        &__slogan {
+            font-size: 0.9rem;
+            color: darken($text-color, $amount: 10%);
+            margin: 5%;
+        }
+
+        &__about {
+            width: 40%;
+            margin: auto;
+            padding: 1.5% 5%;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main {
+        &__banner {
+            display: flex;
+            background-image: url(../img/photo_banner.png);
+            background-size: 99%;
+            background-repeat: no-repeat;
+        }
+
+        &__photo {
+            display: none;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 70%;
+            padding: 4%;
+            border-radius: 15px;
+
+            text-align: center;
+
+            background-color: #E6E6FA95;
+        }
+
+        &__title {
+            font-size: 0.8rem;
+
+            color: darken($text-color, $amount: 10%);
+
+            &_vivid {
+                color: darken($vivid-warm-color, $amount: 10%);
+            }
+        }
+
+        &__slogan {
+            font-size: 0.7rem;
+            color: darken($text-color, $amount: 10%);
+            margin-bottom: 3%;
+        }
+
+        &__about {
+            font-size: 0.7rem;
+            width: 100%;
+            margin: auto;
+            padding: 3% 5%;
+        }
+    }
+}

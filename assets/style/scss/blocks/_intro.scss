@@ -1,0 +1,59 @@
+.main-page-block_intro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+
+    max-width: 1200px;
+    // max-height: 647px;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $cards-bg-color;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
+        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+}
+
+.main-page-block__title_intro {
+    @include main_text;
+    font-size: 2.5em;
+    margin: 2rem auto;
+}
+
+.main-page-block__video {
+    max-width: 90%;
+    margin: 1em auto;
+    border: none;
+    border-radius: 1em;
+}
+
+@media screen and (min-width: 1024px) and (max-width:1300px) {
+    .main-page-block_intro {
+        max-width: 95%;
+    }
+
+    .main-page-block__title_intro {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-page-block_intro {
+        max-width: 95%;
+    }
+
+    .main-page-block__title_intro {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-page-block__title_intro {
+        font-size: 1.2em;
+    }
+}

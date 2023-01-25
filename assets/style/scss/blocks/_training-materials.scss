@@ -1,0 +1,52 @@
+// страницы "Презентации", "Самостоятельные работы" и "Контрольные работы"
+.self-training,
+.tests,
+.presentations {
+    color: $text-color;
+    padding: 25px 6%;
+}
+
+.links__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.training-material__title {
+    color: $vivid-warm-color;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.nth-grade__category {
+    width: 350px;
+}
+
+.training-material__link {
+    text-decoration: none;
+    color: $pastel-warm-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.training-material__link:hover {
+    color: $pastel-cold-color;
+}
+
+.training-material__link:visited {
+    color: $vivid-cold-color;
+}
+
+// адаптив страниц
+
+@media screen and (max-width: 767px) {
+    .links__container {
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .nth-grade__category {
+        width: auto;
+    }
+}

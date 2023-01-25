@@ -1,0 +1,157 @@
+.header {
+    display: grid;
+    grid-template-columns: 5% 1fr 60%;
+    align-items: center;
+
+    min-height: 6rem;
+    padding: 0 6%;
+    margin-bottom: 2%;
+
+    &__logo {
+        width: 90%;
+    }
+
+    &__title {
+        margin-left: 1em;
+        margin-bottom: 0;
+
+        font-family: $main-font;
+        // font-style: italic;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $text-color;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__item {
+        font-family: $main-font;
+        font-size: 1.2em;
+        padding: 0.7% 4%;
+        border-radius: 10px;
+
+        background-color: $pastel-cold-color;
+
+        a {            
+            text-decoration: none;
+            color: white;
+        }
+
+        &:last-child {
+            background-color: $pastel-warm-color;
+        }
+
+        &:hover {
+            background-color: $vivid-cold-color;
+            transform: scale(1.05);
+
+            &:last-child {
+                background-color: $vivid-warm-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1300px) {
+    .header {
+        &__title {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .header {
+        grid-template-columns: 5% 1fr 75%;
+        font-size: 0.8rem;
+
+        &__logo {
+            width: 100%;
+        }
+
+        &__title {
+            align-self: center;
+            margin-left: 5%;
+            margin-bottom: 0;
+            width: 70%;
+
+            font-size: 0.9rem;
+            line-height: 100%;
+        }
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:321px) and (max-width:767px) {
+    .header {
+        grid-template-columns: 15% 1fr 20%;
+
+        &__logo {
+            width: 100%;
+        }
+
+        &__title {
+            align-self: center;
+            width: 40%;
+            margin-left: 5%;
+            margin-bottom: 0;
+
+            font-size: 1rem;
+            line-height: 100%;
+        }
+    }
+
+    .nav {
+        &__item {
+            padding: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+
+        &__item {
+            &:hover {
+                padding: 8%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header {
+        grid-template-columns: 15% 1fr 30%;
+
+        &__logo {
+            width: 100%;
+        }
+
+        &__title {
+            align-self: center;
+            width: 40%;
+            margin-left: 5%;
+            margin-bottom: 0;
+
+            font-size: 0.7rem;
+            line-height: 100%;
+        }
+    }
+
+    .nav {
+        &__item {
+            padding: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+
+            &:hover {
+                padding: 8%;
+            }
+        }
+    }
+}
