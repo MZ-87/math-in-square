@@ -237,6 +237,7 @@
     width: 40%;
     margin: auto;
     padding: 1.5% 5%;
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 320px) {
@@ -309,9 +310,11 @@
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .main-page-block_intro {
     max-width: 95%;
+    margin: 1rem auto;
   }
   .main-page-block__title_intro {
     font-size: 1.6rem;
+    margin: 1rem auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -320,11 +323,13 @@
   }
   .main-page-block__title_intro {
     font-size: 1.5em;
+    margin: 1rem auto;
   }
 }
 @media screen and (max-width: 767px) {
   .main-page-block__title_intro {
     font-size: 1.2em;
+    margin: 0.5rem auto;
   }
 }
 .main-page-block {
@@ -342,7 +347,6 @@
   border-radius: 1em;
   box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37), inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
-
 .main-page-block__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -420,6 +424,10 @@
     max-width: 95%;
     max-height: 460px;
   }
+  .main-page-block__title {
+    font-size: 1.8em;
+    margin: 1rem auto;
+  }
   .card-body {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -436,6 +444,7 @@
     max-height: 427px;
   }
   .main-page-block__title {
+    margin: 0.8rem auto;
     font-size: 1.5em;
   }
   .card {
@@ -461,7 +470,7 @@
     max-height: 360px;
   }
   .main-page-block__title {
-    margin: 1rem auto;
+    margin: 0.8rem auto;
     font-size: 1.5em;
   }
   .card {
@@ -484,6 +493,11 @@
   }
   .main-page-block__title {
     font-size: 1em;
+    margin: 0.8rem auto;
+  }
+  #training-materials {
+    max-width: 100%;
+    max-height: 260px;
   }
   .card {
     min-height: 80px;
@@ -604,14 +618,14 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
-  .education-container {
+  .main-page-education-container {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .education-container {
+  .main-page-education-container {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -619,13 +633,14 @@
   .education-title {
     margin: 1rem auto;
     font-size: 1.5em;
+    color: red;
   }
   .edu-card__img {
     max-height: 100px;
   }
 }
 @media screen and (max-width: 767px) {
-  .education-container {
+  .main-page-education-container {
     max-width: 100%;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -636,12 +651,13 @@
   .education-title {
     margin: 1rem auto;
     font-size: 1.5em;
+    color: red;
   }
   .edu-card {
     margin: 0.5rem 2rem;
   }
   .edu-card__prof {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .edu-card__img {
     display: none;
@@ -667,6 +683,10 @@
 @media screen and (max-width: 424px) {
   .education-title {
     font-size: 1em;
+    color: red;
+  }
+  .edu-card__prof {
+    font-size: 0.7em;
   }
   .edu-card__univers, .edu-card__years {
     font-size: 0.7em;

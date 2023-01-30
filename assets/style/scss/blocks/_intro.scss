@@ -34,10 +34,12 @@
 @media screen and (min-width: 1024px) and (max-width:1300px) {
     .main-page-block_intro {
         max-width: 95%;
+        margin: 1rem auto;
     }
 
     .main-page-block__title_intro {
         font-size: 1.6rem;
+        margin: 1rem auto;
     }
 }
 
@@ -49,11 +51,13 @@
 
     .main-page-block__title_intro {
         font-size: 1.5em;
+        margin: 1rem auto;
     }
 }
 
 @media screen and (max-width: 767px) {
     .main-page-block__title_intro {
         font-size: 1.2em;
+        margin: 0.5rem auto;
     }
 }
