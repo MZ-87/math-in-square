@@ -14,10 +14,6 @@
     @include main-page_block_design;
 }
 
-// .education-title {
-//     @include main-page-block__title;
-// }
-
 .edu-card {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
@@ -58,7 +54,7 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width:1300px) {
-    .education-container {
+    .main-page-education-container {
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
@@ -66,7 +62,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .education-container {
+    .main-page-education-container {
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
@@ -75,6 +71,7 @@
     .education-title {
         margin: 1rem auto;
         font-size: 1.5em;
+        color: red;
     }
 
     .edu-card__img {
@@ -83,7 +80,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .education-container {
+    .main-page-education-container {
         max-width: 100%;
         min-height: fit-content;
         margin-top: 1rem;
@@ -93,13 +90,14 @@
     .education-title {
         margin: 1rem auto;
         font-size: 1.5em;
+        color: red;
     }
 
     .edu-card {
         margin: 0.5rem 2rem;
 
         &__prof {
-            font-size: 0.7em;
+            font-size: 0.8em;
         }
 
         &__img {
@@ -134,9 +132,13 @@
 
     .education-title {
         font-size: 1em;
+        color: red;
     }
 
     .edu-card {
+        &__prof {
+            font-size: 0.7em;
+        }
 
         &__univers,
         &__years {

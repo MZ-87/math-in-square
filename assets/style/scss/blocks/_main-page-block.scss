@@ -16,15 +16,16 @@
     border-radius: 1em;
     box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+
     // @include main-page_block_size;
     // @include main-page_block_margins;
     // @include main-page_block_design;
-}
 
-.main-page-block__title {
-    @include main_text;
-    font-size: 2em;
-    margin: 2rem auto;
+    &__title {
+        @include main_text;
+        font-size: 2em;
+        margin: 2rem auto;
+    }
 }
 
 .main-page-block-container {
@@ -94,7 +95,13 @@
     .main-page-block {
         max-width: 95%;
         max-height: 460px;
+
+        &__title {
+            font-size: 1.8em;
+            margin: 1rem auto;
+        }
     }
+
 
     .card-body {
         min-height: fit-content;
@@ -112,6 +119,7 @@
         max-height: 427px;
 
         &__title {
+            margin: 0.8rem auto;
             font-size: 1.5em;
         }
     }
@@ -142,7 +150,7 @@
         max-height: 360px;
 
         &__title {
-            margin: 1rem auto;
+            margin: 0.8rem auto;
             font-size: 1.5em;
         }
     }
@@ -170,6 +178,12 @@
 
     .main-page-block__title {
         font-size: 1em;
+        margin: 0.8rem auto;
+    }
+
+    #training-materials {
+        max-width: 100%;
+        max-height: 260px;
     }
 
     .card {
