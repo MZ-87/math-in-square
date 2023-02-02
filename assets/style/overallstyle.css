@@ -51,7 +51,7 @@
     font-size: 1.3rem;
   }
   .nav {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -769,6 +769,20 @@ a {
   margin-bottom: 45px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1450px) {
+  .logo-container {
+    grid-template-columns: 0.5fr 2fr;
+    max-width: 40%;
+    max-height: 2rem;
+    margin-bottom: 1em;
+  }
+  .logo-container__img {
+    max-width: 40px;
+  }
+  .logo-container__title {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__title {
     text-align: center;
@@ -778,6 +792,9 @@ a {
   }
   .footer-information__link {
     text-align: center;
+  }
+  .logo-container {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -792,6 +809,9 @@ a {
   }
   .footer__menu {
     text-align: center;
+  }
+  .logo-container {
+    display: none;
   }
 }
 .about__img {
