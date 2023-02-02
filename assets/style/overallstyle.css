@@ -393,6 +393,7 @@
   text-align: center;
   background-color: rgba(236, 229, 229, 0.37);
   border: none;
+  color: #5E5E5E;
 }
 .card__img-top {
   -o-object-fit: cover;
