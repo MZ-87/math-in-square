@@ -7,9 +7,9 @@
     }
 
     &__photo {
+        width: 80%;
         justify-self: end;
 
-        width: 80%;
         border-radius: 30px;
     }
 
@@ -19,15 +19,15 @@
 
     &__title {
         font-family: $title-font;
+        font-size: 2.2rem;
         font-weight: 500;
         line-height: 150%;
-        font-size: 2.2rem;
 
         color: $text-color;
 
         &_vivid {
-            color: $vivid-warm-color;
             padding: 0;
+            color: $vivid-warm-color;
         }
     }
 
@@ -75,8 +75,8 @@
         }
 
         &__title {
-            line-height: 150%;
             font-size: 1.8rem;
+            line-height: 150%;
         }
     }
 }
@@ -145,8 +145,8 @@
 
         &__text {
             margin-top: 70%;
-            margin-left: auto;
             margin-right: auto;
+            margin-left: auto;
             padding: 4%;
             border-radius: 15px;
 
@@ -165,9 +165,9 @@
         }
 
         &__slogan {
+            margin: 5%;
             font-size: 0.9rem;
             color: darken($text-color, $amount: 10%);
-            margin: 5%;
         }
 
         &__about {
@@ -214,16 +214,16 @@
         }
 
         &__slogan {
+            margin-bottom: 3%;
             font-size: 0.7rem;
             color: darken($text-color, $amount: 10%);
-            margin-bottom: 3%;
         }
 
         &__about {
-            font-size: 0.7rem;
             width: 100%;
             margin: auto;
             padding: 3% 5%;
+            font-size: 0.7rem;
         }
     }
 }

@@ -1,7 +1,6 @@
 .main-page-block {
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
 
     max-width: 1200px;
     max-height: 647px;
@@ -10,6 +9,7 @@
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 25px;
 
     background-color: $cards-bg-color;
     border: none;
@@ -23,8 +23,8 @@
 
     &__title {
         @include main_text;
-        font-size: 2em;
         margin: 2rem auto;
+        font-size: 2em;
     }
 }
 
@@ -35,8 +35,8 @@
     justify-content: space-around;
     align-items: center;
 
-    margin-left: 1rem;
     margin-right: 1rem;
+    margin-left: 1rem;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
@@ -48,8 +48,8 @@
     @include main-page_block_card;
 
     &__img-top {
-        object-fit: cover;
         max-height: 250px;
+        object-fit: cover;
     }
 
     &-body {
@@ -97,8 +97,8 @@
         max-height: 460px;
 
         &__title {
-            font-size: 1.8em;
             margin: 1rem auto;
+            font-size: 1.8em;
         }
     }
 

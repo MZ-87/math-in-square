@@ -1,8 +1,8 @@
 /* footer */
 .footer {
+    min-height: 250px;
     padding-top: 30px;
     background: $footer-bg-color;
-    min-height: 250px;
 
     &__title {
         font-family: $main-font;
@@ -45,8 +45,8 @@ a {
     grid-template-columns: 0.25fr 1fr;
     max-width: 20%;
     max-height: 4rem;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 
     &__img {
         max-width: 50px;

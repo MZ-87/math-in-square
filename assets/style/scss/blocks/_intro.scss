@@ -1,8 +1,6 @@
 .main-page-block_intro {
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
-
     max-width: 1200px;
     // max-height: 647px;
 
@@ -10,6 +8,7 @@
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 25px;
 
     background-color: $cards-bg-color;
     border: none;
@@ -19,9 +18,9 @@
 }
 
 .main-page-block__title_intro {
+    margin: 2rem auto;
     @include main_text;
     font-size: 2.5em;
-    margin: 2rem auto;
 }
 
 .main-page-block__video {
@@ -38,8 +37,8 @@
     }
 
     .main-page-block__title_intro {
-        font-size: 1.6rem;
         margin: 1rem auto;
+        font-size: 1.6rem;
     }
 }
 
@@ -50,14 +49,14 @@
     }
 
     .main-page-block__title_intro {
-        font-size: 1.5em;
         margin: 1rem auto;
+        font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 767px) {
     .main-page-block__title_intro {
-        font-size: 1.2em;
         margin: 0.5rem auto;
+        font-size: 1.2em;
     }
 }

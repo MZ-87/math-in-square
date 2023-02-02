@@ -4,19 +4,25 @@
   grid-template-columns: 5% 1fr 60%;
   align-items: center;
   min-height: 6rem;
-  padding: 0 6%;
   margin-bottom: 2%;
+  padding: 0 6%;
 }
 .header__logo {
   width: 90%;
 }
 .header__title {
-  margin-left: 1em;
   margin-bottom: 0;
+  margin-left: 1em;
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #5E5E5E;
+}
+.header__title:hover {
+  color: #FF9190;
+}
+.header__title:active {
+  color: #FF4F55;
 }
 
 .nav {
@@ -25,9 +31,9 @@
   width: 100%;
 }
 .nav__item {
+  padding: 0.7% 4%;
   font-family: "Rubik", sans-serif;
   font-size: 1.2em;
-  padding: 0.7% 4%;
   border-radius: 10px;
   background-color: #5EC6C7;
 }
@@ -64,9 +70,9 @@
   }
   .header__title {
     align-self: center;
-    margin-left: 5%;
-    margin-bottom: 0;
     width: 70%;
+    margin-bottom: 0;
+    margin-left: 5%;
     font-size: 0.9rem;
     line-height: 100%;
   }
@@ -84,14 +90,14 @@
   .header__title {
     align-self: center;
     width: 40%;
-    margin-left: 5%;
     margin-bottom: 0;
+    margin-left: 5%;
     font-size: 1rem;
     line-height: 100%;
   }
   .nav__item {
-    padding: 5%;
     margin-bottom: 5%;
+    padding: 5%;
     text-align: center;
   }
   .nav__item:hover {
@@ -108,14 +114,14 @@
   .header__title {
     align-self: center;
     width: 40%;
-    margin-left: 5%;
     margin-bottom: 0;
+    margin-left: 5%;
     font-size: 0.7rem;
     line-height: 100%;
   }
   .nav__item {
-    padding: 5%;
     margin-bottom: 5%;
+    padding: 5%;
     text-align: center;
   }
   .nav__item:hover {
@@ -128,8 +134,8 @@
   padding: 0 6%;
 }
 .main__photo {
-  justify-self: end;
   width: 80%;
+  justify-self: end;
   border-radius: 30px;
 }
 .main__text {
@@ -137,14 +143,14 @@
 }
 .main__title {
   font-family: "Raleway", sans-serif;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 150%;
-  font-size: 2.2rem;
   color: #5E5E5E;
 }
 .main__title_vivid {
-  color: #FF4F55;
   padding: 0;
+  color: #FF4F55;
 }
 .main__slogan {
   margin: 5% auto 12% auto;
@@ -180,8 +186,8 @@
     font-size: 1.3em;
   }
   .main__title {
-    line-height: 150%;
     font-size: 1.8rem;
+    line-height: 150%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -231,8 +237,8 @@
   }
   .main__text {
     margin-top: 70%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 4%;
     border-radius: 15px;
     text-align: center;
@@ -246,9 +252,9 @@
     color: #ff1c24;
   }
   .main__slogan {
+    margin: 5%;
     font-size: 0.9rem;
     color: #454545;
-    margin: 5%;
   }
   .main__about {
     width: 40%;
@@ -283,26 +289,26 @@
     color: #ff1c24;
   }
   .main__slogan {
+    margin-bottom: 3%;
     font-size: 0.7rem;
     color: #454545;
-    margin-bottom: 3%;
   }
   .main__about {
-    font-size: 0.7rem;
     width: 100%;
     margin: auto;
     padding: 3% 5%;
+    font-size: 0.7rem;
   }
 }
 .main-page-block_intro {
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
   max-width: 1200px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 25px;
   background-color: rgba(236, 229, 229, 0.37);
   border: none;
   border-radius: 1em;
@@ -310,11 +316,11 @@
 }
 
 .main-page-block__title_intro {
+  margin: 2rem auto;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #5E5E5E;
   font-size: 2.5em;
-  margin: 2rem auto;
 }
 
 .main-page-block__video {
@@ -330,8 +336,8 @@
     margin: 1rem auto;
   }
   .main-page-block__title_intro {
-    font-size: 1.6rem;
     margin: 1rem auto;
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -339,26 +345,26 @@
     max-width: 95%;
   }
   .main-page-block__title_intro {
-    font-size: 1.5em;
     margin: 1rem auto;
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 767px) {
   .main-page-block__title_intro {
-    font-size: 1.2em;
     margin: 0.5rem auto;
+    font-size: 1.2em;
   }
 }
 .main-page-block {
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
   max-width: 1200px;
   max-height: 647px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 25px;
   background-color: rgba(236, 229, 229, 0.37);
   border: none;
   border-radius: 1em;
@@ -368,8 +374,8 @@
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #5E5E5E;
-  font-size: 2em;
   margin: 2rem auto;
+  font-size: 2em;
 }
 
 .main-page-block-container {
@@ -377,8 +383,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-left: 1rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   overflow-y: scroll;
 }
 .main-page-block-container::-webkit-scrollbar {
@@ -396,9 +402,9 @@
   color: #5E5E5E;
 }
 .card__img-top {
+  max-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 250px;
 }
 .card-body {
   min-height: 200px;
@@ -443,8 +449,8 @@
     max-height: 460px;
   }
   .main-page-block__title {
-    font-size: 1.8em;
     margin: 1rem auto;
+    font-size: 1.8em;
   }
   .card-body {
     min-height: -webkit-fit-content;
@@ -638,21 +644,11 @@
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .main-page-education-container {
     max-width: 95%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-page-education-container {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .education-title {
-    margin: 1rem auto;
-    font-size: 1.5em;
-    color: red;
-  }
   .edu-card__img {
     max-height: 100px;
   }
@@ -665,11 +661,6 @@
     min-height: fit-content;
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  .education-title {
-    margin: 1rem auto;
-    font-size: 1.5em;
-    color: red;
   }
   .edu-card {
     margin: 0.5rem 2rem;
@@ -699,10 +690,6 @@
   }
 }
 @media screen and (max-width: 424px) {
-  .education-title {
-    font-size: 1em;
-    color: red;
-  }
   .edu-card__prof {
     font-size: 0.7em;
   }
@@ -712,9 +699,9 @@
 }
 /* footer */
 .footer {
+  min-height: 250px;
   padding-top: 30px;
   background: #5EC6C7;
-  min-height: 250px;
 }
 .footer__title {
   font-family: "Rubik", sans-serif;
@@ -750,8 +737,8 @@ a {
   grid-template-columns: 0.25fr 1fr;
   max-width: 20%;
   max-height: 4rem;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 .logo-container__img {
   max-width: 50px;
@@ -815,10 +802,10 @@ a {
   }
 }
 .about__img {
-  max-height: 700px;
   grid-column: 2/3;
-  margin-left: auto;
+  max-height: 700px;
   margin-right: 5em;
+  margin-left: auto;
   border-radius: 30px;
 }
 
