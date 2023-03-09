@@ -1,10 +1,8 @@
-.main {
-    &__banner {
-        display: grid;
-        grid-template-columns: 40% 60%;
+.banner {
+    display: grid;
+    grid-template-columns: 40% 60%;
 
-        padding: 0 6%;
-    }
+    padding: 0 6%;
 
     &__photo {
         width: 80%;
@@ -12,10 +10,10 @@
 
         border-radius: 30px;
     }
+}
 
-    &__text {
-        padding: 10% 15%;
-    }
+.banner-container {
+    padding: 10% 15%;
 
     &__title {
         font-family: $title-font;
@@ -64,10 +62,8 @@
 }
 
 @media screen and (min-width:1299px) and (max-width:1440px) {
-    .main {
-        &__text {
-            padding: 10% 10%;
-        }
+    .banner-container {
+        padding: 10% 10%;
 
         &__about {
             padding: 1.5% 6%;
@@ -82,14 +78,8 @@
 }
 
 @media screen and (min-width:1024px) and (max-width:1300px) {
-    .main {
-        &__text {
-            padding: 7% 8%;
-        }
-
-        &__photo {
-            width: 95%;
-        }
+    .banner-container {
+        padding: 7% 8%;
 
         &__title {
             font-size: 1.6rem;
@@ -101,17 +91,15 @@
             font-size: 1.2em;
         }
     }
+
+    .banner__photo {
+        width: 95%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-    .main {
-        &__text {
-            padding: 10%;
-        }
-
-        &__photo {
-            width: 100%;
-        }
+    .banner-container {
+        padding: 10%;
 
         &__title {
             font-size: 1.3rem;
@@ -127,33 +115,35 @@
 
         }
     }
+
+    .banner__photo {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:321px) and (max-width:767px) {
-    .main {
-        &__banner {
-            display: flex;
-            margin-top: 3%;
-            background-image: url(../img/photo_banner.png);
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
+    .banner {
+        display: flex;
+        margin-top: 3%;
+        background-image: url(../img/photo_banner.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
 
         &__photo {
             display: none;
         }
+    }
 
-        &__text {
-            margin-top: 70%;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 4%;
-            border-radius: 15px;
 
-            text-align: center;
+    .banner-container {
+        margin-top: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 4%;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #E6E6FA95;
 
-            background-color: #E6E6FA95;
-        }
 
         &__title {
             font-size: 1.2rem;
@@ -180,28 +170,27 @@
 }
 
 @media screen and (max-width:320px) {
-    .main {
-        &__banner {
-            display: flex;
-            background-image: url(../img/photo_banner.png);
-            background-size: 99%;
-            background-repeat: no-repeat;
-        }
+    .banner {
+        display: flex;
+        background-image: url(../img/photo_banner.png);
+        background-size: 99%;
+        background-repeat: no-repeat;
+
 
         &__photo {
             display: none;
         }
+    }
 
-        &__text {
-            width: 100%;
-            margin-top: 70%;
-            padding: 4%;
-            border-radius: 15px;
+    .banner-container {
+        width: 100%;
+        margin-top: 70%;
+        padding: 4%;
+        border-radius: 15px;
 
-            text-align: center;
+        text-align: center;
 
-            background-color: #E6E6FA95;
-        }
+        background-color: #E6E6FA95;
 
         &__title {
             font-size: 0.8rem;

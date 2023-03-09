@@ -54,25 +54,27 @@
     </header>
 
     <main class="main">
-        <section class="main__banner">
-            <img class="main__photo" src="assets/img/photo_banner.png" alt="Фото Галины">
-            <section class="main__text">
-                <h1 class="main__title">Здравствуйте! <br /> Меня зовут Галина Александровна, <br /> <span
-                        class="main__title main__title_vivid"> я - современный учитель математики!</span> </h1>
-                <p class="main__slogan">Верю в талант и исключительность каждого ребёнка!</p>
-                <div class="main__about">
+        <!-- banner -->
+        <div class="banner">
+            <img class="banner__photo" src="assets/img/photo_banner.png" alt="Фото Галины">
+            <div class="banner-container">
+                <h1 class="banner-container__title">Здравствуйте! <br /> Меня зовут Галина Александровна, <br /> <span
+                        class="banner-container__title banner-container__title_vivid"> я - современный учитель
+                        математики!</span> </h1>
+                <p class="banner-container__slogan">Верю в талант и исключительность каждого ребёнка!</p>
+                <div class="banner-container__about">
                     <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
                 </div>
-            </section>
-        </section>
-
-        <section class="main-page-block_intro">
-            <h2 class="main-page-block__title_intro">Давайте знакомиться!</h2>
+            </div>
+        </div>
+        <!-- intro -->
+        <div class="info-block info-block_intro">
+            <h4 class="main-page-block__title_intro">Давайте знакомиться!</h4>
             <video class="main-page-block__video" preload="metadata" controls src="assets/video/intro-video_2.mp4"
                 poster="assets/img/poster_video.png"></video>
-        </section>
-
-        <section class="main-page-block" id="training-materials">
+        </div>
+        <!-- к уроку -->
+        <div class="info-block" id="training-materials">
             <h4 class="main-page-block__title">К УРОКУ</h4>
             <div class="main-page-block-container">
                 <div class="card">
@@ -103,9 +105,9 @@
                     <a href="self-training.html" class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
             </div>
-        </section>
-
-        <section class="main-page-block" id="video">
+        </div>
+        <!-- видео -->
+        <div class="info-block" id="video">
             <h4 class="main-page-block__title">ВИДЕО</h4>
             <div class="main-page-block-container">
                 <div class="card">
@@ -245,9 +247,9 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
             </div>
-        </section>
-
-        <section class="main-page-education-block" id="education">
+        </div>
+        <!-- образование -->
+        <div class="main-page-education-block" id="education">
             <div class="main-page-education-container">
                 <h4 class="main-page-block__title">ОБРАЗОВАНИЕ</h4>
                 <div class="edu-card">
@@ -278,7 +280,7 @@
                         референт-переводчик (английский язык)</p>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->

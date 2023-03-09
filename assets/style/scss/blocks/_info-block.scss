@@ -1,0 +1,87 @@
+.main-page-block {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    max-height: 647px;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+
+    background-color: $cards-bg-color;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
+        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+
+    // @include main-page_block_size;
+    // @include main-page_block_margins;
+    // @include main-page_block_design;
+
+    &__title {
+        @include main_text;
+        margin: 2rem auto;
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1300px) {
+    .main-page-block {
+        max-width: 95%;
+        max-height: 460px;
+
+        &__title {
+            margin: 1rem auto;
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-page-block {
+        max-width: 95%;
+        max-height: 427px;
+
+        &__title {
+            margin: 0.8rem auto;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-page-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-page-block {
+        max-width: 100%;
+        max-height: 360px;
+
+        &__title {
+            margin: 0.8rem auto;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .main-page-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-page-block__title {
+        font-size: 1em;
+        margin: 0.8rem auto;
+    }
+
+    #training-materials {
+        max-width: 100%;
+        max-height: 260px;
+    }
+}
