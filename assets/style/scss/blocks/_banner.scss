@@ -62,6 +62,14 @@
 }
 
 @media screen and (min-width:1299px) and (max-width:1440px) {
+    .banner {
+        min-height: 650px;
+
+        &__photo {
+            width: 90%;
+        }
+    }
+
     .banner-container {
         padding: 10% 10%;
 

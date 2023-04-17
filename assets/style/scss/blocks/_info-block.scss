@@ -3,8 +3,6 @@
     flex-direction: column;
 
     max-width: 1200px;
-    max-height: 647px;
-    // для блока интро нужно убрать высоту
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-left: auto;
@@ -20,6 +18,9 @@
     // @include main-page_block_size;
     // @include main-page_block_margins;
     // @include main-page_block_design;
+    &_video {
+        max-height: 750px;
+    }
 
     &__title {
         @include main_text;
