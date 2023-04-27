@@ -1,30 +1,42 @@
 .banner {
     display: grid;
     grid-template-columns: 40% 60%;
+    // padding: 0 6%;
 
-    padding: 0 6%;
+    // border: 2px solid $border-color;
 
     &__photo {
-        width: 80%;
+        width: 55%;
         justify-self: end;
+        margin-top: 5%;
 
-        border-radius: 30px;
+        border-radius: 50%;
+        @include shadow;
     }
 }
 
 .banner-container {
-    padding: 10% 15%;
+    position: relative;
+    width: 70%;
+    height: 56%;
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 5%;
+    border: 2px solid $border-color;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    @include shadow;
 
     &__title {
         font-family: $title-font;
-        font-size: 2.2rem;
+        font-size: 2.0rem;
         font-weight: 500;
-        line-height: 150%;
-
+        line-height: 130%;
         color: $text-color;
 
         &_vivid {
-            padding: 0;
+            // padding: 0;
             color: $vivid-warm-color;
         }
     }
@@ -33,33 +45,42 @@
         margin: 5% auto 12% auto;
         font-family: $main-font;
         font-size: 1.5rem;
-
         color: $text-color;
     }
+}
 
-    &__about {
-        width: 30%;
-        padding: 1.5% 8%;
-        border-radius: 10px;
-        border: none;
+.banner-btn {
+    position: absolute;
+    top: 280px;
+    left: 450px;
+    width: 50%;
+    padding: 1.5% 8%;
+    border-radius: 10px;
+    border: none;
 
-        font-family: $main-font;
-        font-size: 1.5rem;
-        text-align: center;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    text-align: center;
 
-        background-color: $pastel-warm-color;
+    background-color: $pastel-warm-color;
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-        &:hover {
-            background-color: $vivid-warm-color;
-            transform: scale(1.05);
+    &:hover {
+        background-color: $vivid-warm-color;
+        transform: scale(1.05);
+        @include shadow;
+
+        .arrow {
+            transform: translateX(3em);
         }
     }
 }
+
+
 
 @media screen and (min-width:1299px) and (max-width:1440px) {
     .banner {

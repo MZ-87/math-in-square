@@ -9,362 +9,371 @@
     <link rel="stylesheet" href="assets/style/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/overallstyle.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
 
 <body>
-    <header class="header">
-        <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
-        <a href="index.html" class="header__title">Математика в квадрате</a>
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
+            <a href="index.html" class="header__title">Математика в квадрате</a>
 
-        <nav class="navbar navbar-collapse navbar-expand-md">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+            <nav class="navbar navbar-collapse navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav nav">
+                                <li class="nav-item nav__item">
+                                    <a href="about.html" title="Обо мне">Обо мне</a>
+                                </li>
+                                <li class="nav-item nav__item">
+                                    <a href="#training-materials">К уроку</a>
+                                </li>
+                                <li class="nav-item nav__item">
+                                    <a href="#video">Видео</a>
+                                </li>
+                                <li class="nav-item nav__item">
+                                    <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
+                                            class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav nav">
-                            <li class="nav-item nav__item">
-                                <a href="about.html" title="Обо мне">Обо мне</a>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <main class="main">
+            <!-- banner -->
+            <div class="banner">
+                <!-- <img class="banner__photo" src="assets/img/photo_banner.png" alt="Фото Галины"> -->
+                <img class="banner__photo" src="assets/img/banner_round.jpeg" alt="Фото Галины">
+                <div class="banner-container">
+                    <h1 class="banner-container__title">Здравствуйте! <br /> Меня зовут Галина Александровна, <br />
+                        <span class="banner-container__title banner-container__title_vivid"> я - современный учитель
+                            математики!</span> </h1>
+                    <p class="banner-container__slogan">Верю в талант и исключительность каждого ребёнка!</p>
+                    <div class="banner-btn">
+                        <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
+                        <img src="./assets/img/white_arrow.svg" alt="white arrow" class="arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- intro -->
+            <div class="info-block info-block_intro">
+                <h4 class="info-block__title">Давайте знакомиться!</h4>
+                <video class="info-block__video" preload="metadata" controls src="assets/video/intro-video_2.mp4"
+                    poster="assets/img/poster_video.png"></video>
+            </div>
+            <!-- к уроку -->
+            <div class="info-block" id="training-materials">
+                <h4 class="info-block__title">К УРОКУ</h4>
+                <div class="info-block-container">
+                    <div class="card">
+                        <a href="presentations.html">
+                            <img src="./assets/img/index_html/presentation.jpg" class="card-img-top" alt="Презентации"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Презентации</h5>
+                            <p class="card-text">Презентации с теорией по алгебре и геометрии за 6-9 класс</p>
+                        </div>
+                        <a href="presentations.html" class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <a href="tests.html"><img src="./assets/img/index_html/controlnaya.jpg" class="card-img-top"
+                                alt="Контрольные работы"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Контрольные работы</h5>
+                            <p class="card-text">Контрольные работы из видеоуроков</p>
+                        </div>
+                        <a href="tests.html" class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <a href="self-training.html"><img src="./assets/img/index_html/samost.jpg" class="card-img-top"
+                                alt="Самостоятельные работы"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Самостоятельные работы</h5>
+                            <p class="card-text">Задания для проверки знаний</p>
+                        </div>
+                        <a href="self-training.html" class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                </div>
+            </div>
+            <!-- видео -->
+            <div class="info-block info-block_video" id="video">
+                <h4 class="info-block__title">ВИДЕО</h4>
+                <div class="info-block-container">
+                    <div class="card">
+                        <img src="./assets/img/theory2.jpg" class="card-img-top" alt="Вся теория с примерами">
+                        <div class="card-body">
+                            <h5 class="card-title">Вся теория <br>с примерами</h5>
+                            <p class="card-text">Видеоуроки с разбором теории по математике, алгебре и геометрии за 6-9
+                                класс</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/2b80e197-36ae-4668-aff9-f34123ae0700" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/algebra7.jpg" class="card-img-top" alt="УРОКИ 7 класс АЛГЕБРА">
+                        <div class="card-body">
+                            <h5 class="card-title">УРОКИ 7 класс АЛГЕБРА</h5>
+                            <p class="card-text">Все уроки по алгебре за курс 7 класс (по учебнику Мерзляка)</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/f68955ab-16e9-40e7-b7f4-f864de1071e7" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/geom7.jpg" class="card-img-top" alt="УРОКИ 7 класс ГЕОМЕТРИЯ">
+                        <div class="card-body">
+                            <h5 class="card-title">УРОКИ 7 класс ГЕОМЕТРИЯ</h5>
+                            <p class="card-text">Все уроки по геометрии за курс 7 класса (по учебнику Мерзляка)</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/6bcf99d6-9dfe-4550-907d-eda4419f3a0f" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/algebra8.jpg" class="card-img-top" alt="УРОКИ 8 класс АЛГЕБРА">
+                        <div class="card-body">
+                            <h5 class="card-title">УРОКИ 8 класс АЛГЕБРА</h5>
+                            <p class="card-text">Все уроки по алгебре за курс 8 класса (по учебнику Мерзляка)</p>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bUq2-nsa_3GWJfFupAgfQ60"
+                            target="blanc" class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/geom8.jpg" class="card-img-top" alt="УРОКИ 8 класс ГЕОМЕТРИЯ">
+                        <div class="card-body">
+                            <h5 class="card-title">УРОКИ 8 класс ГЕОМЕТРИЯ</h5>
+                            <p class="card-text">Все уроки по геометрии за курс 8 класса (по учебнику Мерзляка)</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/53194160-d912-4889-af13-3c297ba3cf3c" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+
+                    <div class="card card_test">
+                        <img src="./assets/img/kr6.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 6 класс">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>6 класс</h5>
+                            <p class="card-text">Разбор контрольных по математике за курс 6 класса (по учебнику
+                                Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/b77463aa-895b-456f-beae-3102dd7897fb" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+
+                    <div class="card card_test">
+                        <img src="./assets/img/kr7alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс АЛГЕБРА">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс АЛГЕБРА</h5>
+                            <p class="card-text">Разбор контрольных по алгебре за курс 7 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/46ed326d-9e71-4eb5-a4f4-2c03691b6a30" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card card_test">
+                        <img src="./assets/img/kr7geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс ГЕОМЕТРИЯ">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс ГЕОМЕТРИЯ</h5>
+                            <p class="card-text">Разбор контрольных по геометрии за курс 7 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/5f6485ba-e2ba-487d-9649-3a8bda33b2a4" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+
+                    <div class="card card_test">
+                        <img src="./assets/img/kr8alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс АЛГЕБРА">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс АЛГЕБРА</h5>
+                            <p class="card-text">Разбор контрольных по алгебре за курс 8 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/91c7574a-0584-4b6c-a46c-ebbe448565a3" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card card_test">
+                        <img src="./assets/img/kr8geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс ГЕОМЕТРИЯ">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс ГЕОМЕТРИЯ</h5>
+                            <p class="card-text">Разбор контрольных по геометрии за курс 8 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/112cf1a7-b036-4e75-8197-f9cb66532cc7" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+
+                    <div class="card card_test">
+                        <img src="./assets/img/kr9alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс АЛГЕБРА">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс АЛГЕБРА</h5>
+                            <p class="card-text">Разбор контрольных по алгебре за курс 9 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/944af8fa-8c3c-47c6-81e9-ae8eda39b064" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card card_test">
+                        <img src="./assets/img/kr9geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс ГЕОМЕТРИЯ">
+                        <div class="card-body card-body_test">
+                            <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс ГЕОМЕТРИЯ</h5>
+                            <p class="card-text">Разбор контрольных по геометрии за курс 9 класса (по учебнику Мерзляка)
+                            </p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/db3d2fc4-4320-4eeb-b28a-4f966134196d" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card card_test">
+                        <img src="./assets/img/vpr.jpg" class="card-img-top" alt="ВПР">
+                        <div class="card-body">
+                            <h5 class="card-title">Всероссийская проверочная работа</h5>
+                            <p class="card-text">Готовимся к ВПР</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/5a961a63-5b85-4c9b-b26a-b7199228c905" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                    <div class="card card_test">
+                        <img src="./assets/img/oge.jpg" class="card-img-top" alt="ОГЭ">
+                        <div class="card-body">
+                            <h5 class="card-title">Основной государственный экзамен</h5>
+                            <p class="card-text">Готовимся к ОГЭ</p>
+                        </div>
+                        <a href="https://zen.yandex.ru/suite/893860b7-a19a-4ca4-a096-048d3a582f29" target="blanc"
+                            class="btn btn-primary btn-primary_sp">Перейти</a>
+                    </div>
+                </div>
+            </div>
+            <!-- образование -->
+            <div class="main-page-education-block" id="education">
+                <div class="main-page-education-container">
+                    <h4 class="info-block__title">ОБРАЗОВАНИЕ</h4>
+                    <div class="edu-card">
+                        <img src="./assets/img/index_html/unilogo.jpg" alt="Челябинский Государственный Педагогический Университет"
+                            class="edu-card__img">
+                        <h5 class="edu-card__univers">Челябинский Государственный Педагогический Университет (ЮУрГГПУ)
+                        </h5>
+                        <p class="edu-card__years">2006-2011гг.</p>
+                        <p class="edu-card__prof">Специальность «Математика с дополнительной специальностью менеджмент
+                            организации»,
+                            квалификация-учитель математики, менеджер.</p>
+                    </div>
+                    <div class="edu-card">
+                        <img src="./assets/img/index_html/add-ed-logo.jpg"
+                            alt="Институт дополнительных творческих педагогических профессий ЧГПУ"
+                            class="edu-card__img">
+                        <h5 class="edu-card__univers">Институт дополнительных творческих педагогических профессий ЧГПУ
+                        </h5>
+                        <p class="edu-card__years">2008 г.</p>
+                        <p class="edu-card__prof">Специальность «Эстрадные танцы», <br>квалификация – руководитель
+                            детского коллектива эстрадного
+                            танца.</p>
+                    </div>
+                    <div class="edu-card">
+                        <img src="./assets/img/index_html/inyaz-logo.jpg" alt="Кафедра иностранных языков ЧГПУ"
+                            class="edu-card__img">
+                        <h5 class="edu-card__univers">Кафедра иностранных языков ЧГПУ</h5>
+                        <p class="edu-card__years"> 2011 г.</p>
+                        <p class="edu-card__prof">Специальность «Референт-переводчик», квалификация –
+                            референт-переводчик (английский язык)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-white text-center footer" id="footer">
+            <div class="logo-container">
+                <img class="logo-container__img" src="assets/img/logo.png" alt="Логотип математика в квадрате">
+                <p class="logo-container__title">Математика в квадрате</p>
+            </div>
+            <!-- Grid container -->
+            <div class="container p-2">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-1 col-md-1 col-sm d-none d-lg-block text-start">
+                        <img src="./assets/img/footer/mail_pict.svg" alt="mail_img">
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-11 mb-4 mb-md-0 text-start">
+                        <h5 class="footer__title">Контакты</h5>
+
+                        <p class="footer__content">
+                            Если у вас остались вопросы или вы хотите обсудить сотрудничество, <a
+                                href="https://wapp.click/79085834381" target="_blank"
+                                class="footer__content footer__content-link">свяжитесь со мной &nbsp;<i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start footer-items__link">
+                        <ul class="list-unstyled mb-0 footer__menu">
+                            <li>
+                                <a href="about.html" class="footer__menu-link">Обо мне</a>
                             </li>
-                            <li class="nav-item nav__item">
-                                <a href="#training-materials">К уроку</a>
+                            <li>
+                                <a href="#training-materials" class="footer__menu-link">К уроку</a>
                             </li>
-                            <li class="nav-item nav__item">
-                                <a href="#video">Видео</a>
-                            </li>
-                            <li class="nav-item nav__item">
-                                <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
-                                        class="fa-brands fa-whatsapp"></i></a>
+                            <li>
+                                <a href="#video" class="footer__menu-link">Видео</a>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </nav>
+                    <!--Grid column-->
 
-
-    </header>
-
-    <main class="main">
-        <!-- banner -->
-        <div class="banner">
-            <img class="banner__photo" src="assets/img/photo_banner.png" alt="Фото Галины">
-            <div class="banner-container">
-                <h1 class="banner-container__title">Здравствуйте! <br /> Меня зовут Галина Александровна, <br /> <span
-                        class="banner-container__title banner-container__title_vivid"> я - современный учитель
-                        математики!</span> </h1>
-                <p class="banner-container__slogan">Верю в талант и исключительность каждого ребёнка!</p>
-                <div class="banner-container__about">
-                    <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
-                </div>
-            </div>
-        </div>
-        <!-- intro -->
-        <div class="info-block info-block_intro">
-            <h4 class="info-block__title">Давайте знакомиться!</h4>
-            <video class="info-block__video" preload="metadata" controls src="assets/video/intro-video_2.mp4"
-                poster="assets/img/poster_video.png"></video>
-        </div>
-        <!-- к уроку -->
-        <div class="info-block" id="training-materials">
-            <h4 class="info-block__title">К УРОКУ</h4>
-            <div class="info-block-container">
-                <div class="card">
-                    <a href="presentations.html">
-                        <img src="./assets/img/presentation.jpg" class="card-img-top" alt="Презентации"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Презентации</h5>
-                        <p class="card-text">Презентации с теорией по алгебре и геометрии за 6-9 класс</p>
-                    </div>
-                    <a href="presentations.html" class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <a href="tests.html"><img src="./assets/img/controlnaya.jpg" class="card-img-top"
-                            alt="Контрольные работы"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Контрольные работы</h5>
-                        <p class="card-text">Контрольные работы из видеоуроков</p>
-                    </div>
-                    <a href="tests.html" class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <a href="self-training.html"><img src="./assets/img/samost.jpg" class="card-img-top"
-                            alt="Самостоятельные работы"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Самостоятельные работы</h5>
-                        <p class="card-text">Задания для проверки знаний</p>
-                    </div>
-                    <a href="self-training.html" class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-            </div>
-        </div>
-        <!-- видео -->
-        <div class="info-block info-block_video" id="video">
-            <h4 class="info-block__title">ВИДЕО</h4>
-            <div class="info-block-container">
-                <div class="card">
-                    <img src="./assets/img/theory2.jpg" class="card-img-top" alt="Вся теория с примерами">
-                    <div class="card-body">
-                        <h5 class="card-title">Вся теория <br>с примерами</h5>
-                        <p class="card-text">Видеоуроки с разбором теории по математике, алгебре и геометрии за 6-9
-                            класс</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/2b80e197-36ae-4668-aff9-f34123ae0700" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/algebra7.jpg" class="card-img-top" alt="УРОКИ 7 класс АЛГЕБРА">
-                    <div class="card-body">
-                        <h5 class="card-title">УРОКИ 7 класс АЛГЕБРА</h5>
-                        <p class="card-text">Все уроки по алгебре за курс 7 класс (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/f68955ab-16e9-40e7-b7f4-f864de1071e7" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/geom7.jpg" class="card-img-top" alt="УРОКИ 7 класс ГЕОМЕТРИЯ">
-                    <div class="card-body">
-                        <h5 class="card-title">УРОКИ 7 класс ГЕОМЕТРИЯ</h5>
-                        <p class="card-text">Все уроки по геометрии за курс 7 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/6bcf99d6-9dfe-4550-907d-eda4419f3a0f" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/algebra8.jpg" class="card-img-top" alt="УРОКИ 8 класс АЛГЕБРА">
-                    <div class="card-body">
-                        <h5 class="card-title">УРОКИ 8 класс АЛГЕБРА</h5>
-                        <p class="card-text">Все уроки по алгебре за курс 8 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bUq2-nsa_3GWJfFupAgfQ60" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/geom8.jpg" class="card-img-top" alt="УРОКИ 8 класс ГЕОМЕТРИЯ">
-                    <div class="card-body">
-                        <h5 class="card-title">УРОКИ 8 класс ГЕОМЕТРИЯ</h5>
-                        <p class="card-text">Все уроки по геометрии за курс 8 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/53194160-d912-4889-af13-3c297ba3cf3c" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-
-                <div class="card card_test">
-                    <img src="./assets/img/kr6.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 6 класс">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>6 класс</h5>
-                        <p class="card-text">Разбор контрольных по математике за курс 6 класса (по учебнику
-                            Мерзляка)
-                        </p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/b77463aa-895b-456f-beae-3102dd7897fb" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-
-                <div class="card card_test">
-                    <img src="./assets/img/kr7alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс АЛГЕБРА">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс АЛГЕБРА</h5>
-                        <p class="card-text">Разбор контрольных по алгебре за курс 7 класса (по учебнику Мерзляка)
-                        </p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/46ed326d-9e71-4eb5-a4f4-2c03691b6a30" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card card_test">
-                    <img src="./assets/img/kr7geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс ГЕОМЕТРИЯ">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс ГЕОМЕТРИЯ</h5>
-                        <p class="card-text">Разбор контрольных по геометрии за курс 7 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/5f6485ba-e2ba-487d-9649-3a8bda33b2a4" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-
-                <div class="card card_test">
-                    <img src="./assets/img/kr8alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс АЛГЕБРА">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс АЛГЕБРА</h5>
-                        <p class="card-text">Разбор контрольных по алгебре за курс 8 класса (по учебнику Мерзляка)
-                        </p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/91c7574a-0584-4b6c-a46c-ebbe448565a3" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card card_test">
-                    <img src="./assets/img/kr8geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс ГЕОМЕТРИЯ">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс ГЕОМЕТРИЯ</h5>
-                        <p class="card-text">Разбор контрольных по геометрии за курс 8 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/112cf1a7-b036-4e75-8197-f9cb66532cc7" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-
-                <div class="card card_test">
-                    <img src="./assets/img/kr9alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс АЛГЕБРА">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс АЛГЕБРА</h5>
-                        <p class="card-text">Разбор контрольных по алгебре за курс 9 класса (по учебнику Мерзляка)
-                        </p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/944af8fa-8c3c-47c6-81e9-ae8eda39b064" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card card_test">
-                    <img src="./assets/img/kr9geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс ГЕОМЕТРИЯ">
-                    <div class="card-body card-body_test">
-                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс ГЕОМЕТРИЯ</h5>
-                        <p class="card-text">Разбор контрольных по геометрии за курс 9 класса (по учебнику Мерзляка)</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/db3d2fc4-4320-4eeb-b28a-4f966134196d" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card card_test">
-                    <img src="./assets/img/vpr.jpg" class="card-img-top" alt="ВПР">
-                    <div class="card-body">
-                        <h5 class="card-title">Всероссийская проверочная работа</h5>
-                        <p class="card-text">Готовимся к ВПР</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/5a961a63-5b85-4c9b-b26a-b7199228c905" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-                <div class="card card_test">
-                    <img src="./assets/img/oge.jpg" class="card-img-top" alt="ОГЭ">
-                    <div class="card-body">
-                        <h5 class="card-title">Основной государственный экзамен</h5>
-                        <p class="card-text">Готовимся к ОГЭ</p>
-                    </div>
-                    <a href="https://zen.yandex.ru/suite/893860b7-a19a-4ca4-a096-048d3a582f29" target="blanc"
-                        class="btn btn-primary btn-primary_sp">Перейти</a>
-                </div>
-            </div>
-        </div>
-        <!-- образование -->
-        <div class="main-page-education-block" id="education">
-            <div class="main-page-education-container">
-                <h4 class="info-block__title">ОБРАЗОВАНИЕ</h4>
-                <div class="edu-card">
-                    <img src="./assets/img/unilogo.jpg" alt="Челябинский Государственный Педагогический Университет"
-                        class="edu-card__img">
-                    <h5 class="edu-card__univers">Челябинский Государственный Педагогический Университет (ЮУрГГПУ)
-                    </h5>
-                    <p class="edu-card__years">2006-2011гг.</p>
-                    <p class="edu-card__prof">Специальность «Математика с дополнительной специальностью менеджмент
-                        организации»,
-                        квалификация-учитель математики, менеджер.</p>
-                </div>
-                <div class="edu-card">
-                    <img src="./assets/img/add-ed-logo.jpg"
-                        alt="Институт дополнительных творческих педагогических профессий ЧГПУ" class="edu-card__img">
-                    <h5 class="edu-card__univers">Институт дополнительных творческих педагогических профессий ЧГПУ
-                    </h5>
-                    <p class="edu-card__years">2008 г.</p>
-                    <p class="edu-card__prof">Специальность «Эстрадные танцы», <br>квалификация – руководитель
-                        детского коллектива эстрадного
-                        танца.</p>
-                </div>
-                <div class="edu-card">
-                    <img src="./assets/img/inyaz-logo.jpg" alt="Кафедра иностранных языков ЧГПУ" class="edu-card__img">
-                    <h5 class="edu-card__univers">Кафедра иностранных языков ЧГПУ</h5>
-                    <p class="edu-card__years"> 2011 г.</p>
-                    <p class="edu-card__prof">Специальность «Референт-переводчик», квалификация –
-                        референт-переводчик (английский язык)</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="text-white text-center footer" id="footer">
-        <div class="logo-container">
-            <img class="logo-container__img" src="assets/img/logo.png" alt="Логотип математика в квадрате">
-            <p class="logo-container__title">Математика в квадрате</p>
-        </div>
-        <!-- Grid container -->
-        <div class="container p-2">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-1 col-md-1 col-sm d-none d-lg-block text-start">
-                    <img src="./assets/img/footer_img/mail_pict.svg" alt="mail_img">
-                </div>
-                <!--Grid column-->
-                <div class="col-lg-5 col-md-11 mb-4 mb-md-0 text-start">
-                    <h5 class="footer__title">Контакты</h5>
-
-                    <p class="footer__content">
-                        Если у вас остались вопросы или вы хотите обсудить сотрудничество, <a
-                            href="https://wapp.click/79085834381" target="_blank"
-                            class="footer__content footer__content-link">свяжитесь со мной &nbsp;<i
-                                class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start footer-items__link">
-                    <ul class="list-unstyled mb-0 footer__menu">
-                        <li>
-                            <a href="about.html" class="footer__menu-link">Обо мне</a>
-                        </li>
-                        <li>
-                            <a href="#training-materials" class="footer__menu-link">К уроку</a>
-                        </li>
-                        <li>
-                            <a href="#video" class="footer__menu-link">Видео</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
-                    <div class="footer__social d-flex align-items-center flex-column" style="height: 120px">
-                        <div>
-                            <p class="footer__content">Следите за мной в соц. сетях</p>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="text-center media-container">
-                                <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw"
-                                    class="me-4 text-reset social" target="blank">
-                                    <img src="./assets/img/footer_img/icon-youtube.png" alt="YouTube"
-                                        class="footer__content_youtube">
-                                </a>
-                                <a href="https://vk.com/club_math_in2" class="me-4 text-reset social" target="blank">
-                                    <img src="./assets/img/footer_img/vkontakte.png" alt="vkontakte"
-                                        class="footer__content_vk">
-                                </a>
-                                <a href="https://zen.yandex.ru/id/600114dd523bfe5b05a215c0"
-                                    class="me-4 text-reset social" target="blank">
-                                    <img src="./assets/img/footer_img/icons8-yandex-zen.svg" alt="Yandexdzen"
-                                        class="footer__content_dzen">
-                                </a>
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
+                        <div class="footer__social d-flex align-items-center flex-column" style="height: 120px">
+                            <div>
+                                <p class="footer__content">Следите за мной в соц. сетях</p>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="text-center media-container">
+                                    <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw"
+                                        class="me-4 text-reset social" target="blank">
+                                        <img src="./assets/img/footer/icon-youtube.png" alt="YouTube"
+                                            class="footer__content_youtube">
+                                    </a>
+                                    <a href="https://vk.com/club_math_in2" class="me-4 text-reset social"
+                                        target="blank">
+                                        <img src="./assets/img/footer/vkontakte.png" alt="vkontakte"
+                                            class="footer__content_vk">
+                                    </a>
+                                    <a href="https://zen.yandex.ru/id/600114dd523bfe5b05a215c0"
+                                        class="me-4 text-reset social" target="blank">
+                                        <img src="./assets/img/footer/icons8-yandex-zen.svg" alt="Yandexdzen"
+                                            class="footer__content_dzen">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--Grid column-->
                 </div>
-                <!--Grid column-->
+                <!--Grid row-->
             </div>
-            <!--Grid row-->
-        </div>
-        <!-- Grid container -->
+            <!-- Grid container -->
 
-        <!-- Copyright -->
-        <div class="text-center p-4 copyright">
-            © 2022 Все права защищены.
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-
+            <!-- Copyright -->
+            <div class="text-center p-4 copyright">
+                © 2022 Все права защищены.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
