@@ -1,0 +1,51 @@
+.video-item {
+    position: relative;
+    width: 25%;
+    // height: 50%;
+
+    &__bg {
+        width: 100%;
+    }
+
+    &__label {
+        position: absolute;
+
+        width: 10rem;
+        height: 2.5rem;
+        padding-top: 0.3rem;
+        background-color: $vivid-warm-color;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        text-align: center;
+        // @include shadow;
+
+        &:hover {
+
+            transform: scale(1.05);
+            @include shadow;
+        }
+
+        &_top {
+            top: 50%;
+            left: 60%;
+        }
+
+        &_bottom {
+            top: 65%;
+            left: 60%;
+        }
+    }
+
+    &__link {
+        @include main_text;
+        font-weight: 500;
+        font-size: 1.2em;
+        color: $text-color-white;
+
+        &:hover {
+            color: $text-color-white;
+        }
+    }
+}

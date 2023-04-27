@@ -19,7 +19,7 @@
   color: #5E5E5E;
 }
 .header__title:hover {
-  color: #FF9190;
+  color: #e88c8b;
 }
 .header__title:active {
   color: #FF4F55;
@@ -42,7 +42,7 @@
   color: white;
 }
 .nav__item:last-child {
-  background-color: #FF9190;
+  background-color: #e88c8b;
 }
 .nav__item:hover {
   background-color: #4EB6B7;
@@ -172,8 +172,8 @@
 
 .banner-btn {
   position: absolute;
-  top: 280px;
-  left: 450px;
+  top: 77%;
+  left: 55%;
   width: 50%;
   padding: 1.5% 8%;
   border-radius: 10px;
@@ -181,7 +181,7 @@
   font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   text-align: center;
-  background-color: #FF9190;
+  background-color: #e88c8b;
 }
 .banner-btn a {
   text-decoration: none;
@@ -196,7 +196,7 @@
   transform: translateX(3em);
 }
 
-@media screen and (min-width: 1299px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .banner {
     min-height: 650px;
   }
@@ -215,7 +215,7 @@
     line-height: 150%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .banner-container {
     padding: 7% 8%;
   }
@@ -231,7 +231,7 @@
     width: 95%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .banner-container {
     padding: 10%;
   }
@@ -249,7 +249,7 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .banner {
     display: flex;
     margin-top: 3%;
@@ -518,6 +518,48 @@
     max-height: 260px;
   }
 }
+.video-item {
+  position: relative;
+  width: 25%;
+}
+.video-item__bg {
+  width: 100%;
+}
+.video-item__label {
+  position: absolute;
+  width: 10rem;
+  height: 2.5rem;
+  padding-top: 0.3rem;
+  background-color: #FF4F55;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: center;
+}
+.video-item__label:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37), inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+}
+.video-item__label_top {
+  top: 50%;
+  left: 60%;
+}
+.video-item__label_bottom {
+  top: 65%;
+  left: 60%;
+}
+.video-item__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5E5E5E;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+.video-item__link:hover {
+  color: #FFFFFF;
+}
+
 .self-training,
 .tests,
 .presentations {
@@ -544,7 +586,7 @@
 
 .training-material__link {
   text-decoration: none;
-  color: #FF9190;
+  color: #e88c8b;
   display: flex;
   flex-direction: column;
 }
@@ -993,4 +1035,8 @@ a {
   max-width: 80%;
   margin: auto;
   box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

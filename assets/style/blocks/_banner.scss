@@ -51,8 +51,8 @@
 
 .banner-btn {
     position: absolute;
-    top: 280px;
-    left: 450px;
+    top: 77%;
+    left: 55%;
     width: 50%;
     padding: 1.5% 8%;
     border-radius: 10px;
@@ -82,7 +82,7 @@
 
 
 
-@media screen and (min-width:1299px) and (max-width:1440px) {
+@media screen and (max-width:1440px) {
     .banner {
         min-height: 650px;
 
@@ -106,7 +106,7 @@
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1300px) {
+@media screen and (max-width:1300px) {
     .banner-container {
         padding: 7% 8%;
 
@@ -126,7 +126,7 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (max-width:1023px) {
     .banner-container {
         padding: 10%;
 
@@ -150,7 +150,7 @@
     }
 }
 
-@media screen and (min-width:321px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     .banner {
         display: flex;
         margin-top: 3%;

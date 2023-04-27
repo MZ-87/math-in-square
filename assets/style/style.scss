@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap');
 
-@import "vars"; 
-@import "mixins"; 
+@import "vars";
+@import "mixins";
 
-@import "blocks/header"; 
-@import "blocks/banner"; 
+@import "blocks/header";
+@import "blocks/banner";
 // @import "scss/blocks/intro";  
 @import "blocks/card";
 @import "blocks/info-block";
-@import "blocks/training-materials"; 
+@import "blocks/_video-item";
+@import "blocks/training-materials";
 @import "blocks/education";
-@import "blocks/footer"; 
-@import "blocks/about"; 
+@import "blocks/footer";
+@import "blocks/about";
 
 
-.wrapper{
+.wrapper {
     max-width: 80%;
     margin: auto;
     box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
 }
