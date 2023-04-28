@@ -1,0 +1,45 @@
+.inner {
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // gap: 15%;
+    width: 100%;
+}
+
+.inner-wrapper {
+    display: inherit;
+    // display: none;
+    gap: 15%;
+}
+
+.inner-label {
+    display: inherit;
+    justify-content: flex-end;
+    width: 40%;
+    //    max-width: 10rem;
+    height: fit-content;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0.8rem 3rem;
+    // padding-top: 1rem;
+    // padding-right: 3rem;
+    // padding-left: 3rem;
+    background-color: $vivid-cold-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    &:hover {
+        transform: scale(1.05);
+        @include shadow;
+    }
+
+
+    &__title {
+        margin-bottom: 0;
+        @include main_text;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: $text-color-white;
+    }
+}

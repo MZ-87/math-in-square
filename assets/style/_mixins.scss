@@ -8,6 +8,11 @@
     box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
+
+@mixin shadow-lb{
+    box-shadow:  -6px -6px 16px rgba(78, 55, 55, 0.37),
+    inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+}
 // @mixin main-page-block__title{
 //     @include main_text;
 //     font-size: 2em;
